@@ -35,7 +35,10 @@ listingSchema.pre('save', function(next) {
 
   //Mocha tests require validation of name and code
   if(!this.code || !this.name) {
-    next(new Error("Error. Name or code must be given."));
+    //Use next to throw error if this requirement is not met
+    //http://mongoosejs.com/docs/3.8.x/docs/middleware.html
+    var err = new Error('something went wrong');
+    next(err);
     return;
   }
 
