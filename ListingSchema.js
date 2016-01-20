@@ -6,6 +6,7 @@ var mongoose = require('mongoose'),
 var listingSchema = new Schema({
   /* These are the same datafields Assignment2 */
   /* Inspired by the tutorial located in the repo */
+  
   code: String,
   name: String,
   coordinates: {
