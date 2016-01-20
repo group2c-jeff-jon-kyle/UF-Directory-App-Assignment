@@ -59,4 +59,5 @@ fs.readFile('listings.json', 'utf8', function(error, data) {
 /*
   Once you've written + run the script, check out your MongoLab database to ensure that
   it saved everything correctly.
+  
  */
