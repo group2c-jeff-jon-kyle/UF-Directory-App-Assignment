@@ -33,7 +33,11 @@ listingSchema.pre('save', function(next) {
     this.created_at = currentDate;
   }
 
-  //Data validaiton needed?
+  //Mocha tests require validation of name and code
+  if(!this.code || !this.name) {
+    next( new Error("Error. Name or code must be given.") );
+    return;
+  }
 
   next();
 });
