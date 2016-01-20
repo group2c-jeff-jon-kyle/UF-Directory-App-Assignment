@@ -1,0 +1,5 @@
+module.exports = {
+  db: {
+    uri: 'mongodb://<dbuser>:<dbpassword>@ds056698.mongolab.com:56698/cen3101_assignment3_db', //place the URI of your mongo database here.
+  }
+};
