@@ -35,7 +35,7 @@ listingSchema.pre('save', function(next) {
 
   //Mocha tests require validation of name and code
   if(!this.code || !this.name) {
-    next( new Error("Error. Name or code must be given.") );
+    next(new Error("Error. Name or code must be given."));
     return;
   }
 
